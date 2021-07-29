@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="logo.png" alt="YouTube Logo" class="youtube-logo" />
+      </a>
+      <form class="search-bar">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          id="input"
+        />
+        <button class="search-btn" onclick="findVideos(event)">
+          <img src="magnify.svg" />
+        </button>
+      </form>
+      <div class="menu-icons">
+        <a href="#">
+          <img src="video-plus.svg" alt="Upload Video" />
+        </a>
+        <a href="#">
+          <img src="apps.svg" alt="Apps" />
+        </a>
+        <a href="#">
+          <img src="bell.svg" alt="Notifications" />
+        </a>
+        <a href="#">
+          <img
+            class="menu-channel-icon"
+            src="http:///unsplash.it/36/36?gravity=center"
+            alt="Your Channel"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div id="videos_div"></div>
+    </main>
+  </body>
+</html>
+
+<script src="main.js"></script>
